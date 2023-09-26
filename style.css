@@ -1,0 +1,24 @@
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: right;
+  margin: 20px 40px 0px 0px;
+  font-size: 1.5vw;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a:visited {
+  color: black;
+}
+a:active {
+  color: blue;
+}
+a:hover {
+  color: beige;
+}
