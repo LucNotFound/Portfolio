@@ -1,24 +1,56 @@
-ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  justify-content: right;
-  margin: 20px 40px 0px 0px;
-  font-size: 1.5vw;
+body{
+  background-color: black;
 }
-
-a {
+nav {
+  justify-content: space-between;
+  position: fixed;
+  right: 30px;
+  top: 5px;
+  
+}
+a{
+  
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
+  color: rgb(255, 252, 252);
+  font-size: 30px;
 }
 
-a:visited {
-  color: black;
-}
-a:active {
-  color: blue;
-}
 a:hover {
-  color: beige;
+  text-shadow: 0 0 10px #00ff11, 0 0 20px #00ff2a, 0 0 42px rgb(0, 255, 34),
+    0 0 82px rgb(0, 255, 60), 0 0 92px rgb(0, 255, 110);
+    
+}
+
+.page {
+  height: 100vh;
+}
+
+#home {
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 42px rgb(0, 255, 34),
+    0 0 82px rgb(0, 255, 60), 0 0 92px rgb(0, 255, 110);
+  color: rgb(0, 0, 0);
+}
+
+#project {
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 42px rgb(0, 255, 34),
+    0 0 82px rgb(0, 255, 60), 0 0 92px rgb(0, 255, 110);
+  color: rgb(0, 0, 0);
+}
+
+#about {
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 42px rgb(0, 255, 34),
+    0 0 82px rgb(0, 255, 60), 0 0 92px rgb(0, 255, 110);
+  color: rgb(0, 0, 0);
+}
+
+#contact {
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 42px rgb(0, 255, 34),
+    0 0 82px rgb(0, 255, 60), 0 0 92px rgb(0, 255, 110);
+  color: rgb(0, 0, 0);
+}
+
+img {
+  max-width: 100%;
+  max-height: 300px
+  
 }
