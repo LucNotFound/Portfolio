@@ -31,7 +31,6 @@ nav {
   grid-template-rows: 100%;
   grid-template-areas: "log navbar";
   position: fixed;
-  
 }
 
 ul {
@@ -43,16 +42,16 @@ ul {
   justify-items: right;
 }
 
-#i-btn{
+#i-btn {
   grid-area: in;
 }
-#p-btn{
+#p-btn {
   grid-area: pr;
 }
-#a-btn{
+#a-btn {
   grid-area: ab;
 }
-#c-btn{
+#c-btn {
   grid-area: co;
 }
 

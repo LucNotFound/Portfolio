@@ -29,30 +29,30 @@
   grid-template-rows: 20% 80%;
 }
 
-#project-page-container #content #top-projs{
+#project-page-container #content #top-projs {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 100%;
 }
 
-#project-page-container #content #project-area{
+#project-page-container #content #project-area {
   display: grid;
   grid-template-columns: 33% 34% 33%;
   grid-template-rows: 100%;
 }
 
-#project-page-container #content #project-area #project1{
+#project-page-container #content #project-area #project1 {
   background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-rows: 85% 15%;
 }
 
-#project-page-container #content #project-area #project1 img{
+#project-page-container #content #project-area #project1 img {
   width: 465px;
   padding: 20px 0px 0px 20px;
 }
 
-#project-page-container #content #project-area #project1 p{
+#project-page-container #content #project-area #project1 p {
   font-size: 25px;
   padding: 0px 0px 0px 20px;
 }
