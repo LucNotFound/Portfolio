@@ -1,0 +1,26 @@
+#projects {
+  background-color: rgb(248, 250, 229);
+  grid-area: projpage;
+}
+
+#project-page-container {
+  display: grid;
+  grid-template-columns: 1503.2px;
+  grid-template-rows: 20% auto;
+  grid-template-areas:
+    "ptitle"
+    "pcontent";
+}
+
+#project-page-container #title {
+  grid-area: ptitle;
+  height: 152.8px;
+  text-transform: uppercase;
+  padding: 50px 0px 0px 80px;
+  font-size: 30px;
+}
+
+#project-page-container #content {
+  grid-area: pcontent;
+  height: 611.2px;
+}

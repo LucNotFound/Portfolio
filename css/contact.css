@@ -1,0 +1,38 @@
+#contacts {
+  background-color: bisque;
+  grid-area: contactpage;
+}
+
+#contact-page-container{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% auto;
+  grid-template-areas:
+  "atitle"
+  "aconts";
+}
+
+#contact-page-container #title{
+  grid-area: atitle;
+  height: 152.8px;
+}
+
+#contact-page-container #contact-info{
+  grid-area: aconts;
+  height: 611.2px;
+
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 100%;
+
+  grid-template-areas:
+  "cmessage icons";
+}
+
+#contact-page-container #messbox{
+  grid-area: cmessage;
+}
+
+#contact-page-container #contact-icons{
+  grid-area: icons;
+}

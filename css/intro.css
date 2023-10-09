@@ -1,0 +1,67 @@
+#intro {
+  background-color: rgb(248, 250, 229);
+  grid-area: intropage;
+}
+
+#intro-page-container {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: 764px;
+  height: 1503.2;
+  grid-template-areas: "iword ipic";
+}
+
+#intro-page-container #txt {
+  grid-area: iword;
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: 20% auto;
+}
+
+#intro-page-container #txt #content {
+  padding: 0 0 0 80px;
+}
+
+#intro-page-container #title {
+  text-transform: uppercase;
+  padding: 50px 0px 0px 80px;
+  font-size: 30px;
+}
+
+#intro-page-container h1 {
+  padding: 0 0 0 30px;
+  font-size: 50px;
+}
+
+#intro-page-container h3 {
+  font-size: 30px;
+}
+
+#intro-page-container #img {
+  grid-area: ipic;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80% auto;
+}
+
+#intro-page-container #img #content img {
+  padding: 30px;
+  width: 690px;
+}
+
+#intro-page-container #img {
+  width: 750px;
+
+  background-color: rgb(248, 250, 229);
+}
+
+#intro-page-container #img #content {
+  margin: 15px 0 0 0;
+  background-color: rgb(255, 255, 255);
+}
+
+#intro-page-container #name{
+  padding: 40px 0 0 80px;
+  font-size: 60px;
+}
