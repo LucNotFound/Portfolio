@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
-    <div id="blank"></div>
+    <div class="page" id="blank"></div>
     <nav>
       <div>
         <a href="#top"><img src="assets/logo2.png" alt="logo" /></a>
       </div>
-      <ul>
-        <li id="i-btn"><a href="#intro">Introduction</a></li>
-        <li id="p-btn"><a href="#projects">Projects</a></li>
-        <li id="a-btn"><a href="#about_me">About Me</a></li>
-        <li id="c-btn"><a href="#contacts">Contacts</a></li>
-      </ul>
+      <div id="btn-container">
+        <a class="btn" id="i-btn" href="#intro">Introduction</a>
+        <a class="btn" id="p-btn" href="#projects">Projects</a>
+        <a class="btn" id="a-btn" href="#about_me">About Me</a>
+        <a class="btn" id="c-btn" href="#contacts">Contacts</a>
+      </div>
     </nav>
 
     <section class="page" id="intro">
@@ -29,11 +29,10 @@
         <div id="txt">
           <div id="title">Introduction</div>
           <div id="content">
-            <h1>Future Security Engineer</h1>
+            <h1>Something About Me</h1>
             <h3>
-              Hi, Im John Hyacinth V. David currently studying at Lyceum
-              Northwestern University as an IT. I am actually aiming to be a
-              security engineer in the future.
+              I'm currently studying at Lyceum Northwestern University as an IT.
+              I am actually aiming to be a security engineer in the future.
             </h3>
           </div>
         </div>
@@ -50,17 +49,22 @@
       <div id="project-page-container">
         <div id="title">Projects</div>
         <div id="content">
-          <div id="top-projs"></div>
+          <div id="top-projs">
+            <h2>3 Most Recent Projects</h2>
+          </div>
           <div id="project-area">
-            <div id="project2"></div>
-            <div id="project1">
-              <img src="assets/prj.jpg" alt="1st-project" />
-              <p>
-                This is my very first project
-                <a href="" target="_blank">Click for the code</a>
-              </p>
+            <div id="project2" class="cards">
+              <img src="" alt="">
+              <button class="proj-btn" id="project2-btn">Visit</button>
             </div>
-            <div id="project3"></div>
+            <div id="project1" class="cards">
+              <img src="assets/prj.jpg" alt="1st-project" />
+              <button class="proj-btn" id="project1-btn">Visit</button>
+            </div>
+            <div id="project3" class="cards">
+              <img src="" alt="">
+              <button class="proj-btn" id="project3-btn">Visit</button>
+            </div>
           </div>
         </div>
       </div>

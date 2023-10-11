@@ -1,3 +1,8 @@
+@font-face {
+  font-family: proxima-sans-serif;
+  src: url("../fonts/Proxima\ Nova\ Font.otf");
+}
+
 html {
   scroll-behavior: smooth;
   padding: 0;
@@ -7,6 +12,7 @@ html {
 }
 
 body {
+  font-family: proxima-sans-serif;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 60px auto auto auto auto 60px;
@@ -21,7 +27,6 @@ body {
 
 #blank {
   grid-area: navigation;
-  background-color: rgb(248, 250, 229);
 }
 
 nav {
@@ -33,34 +38,61 @@ nav {
   position: fixed;
 }
 
-ul {
-  list-style: none;
+#btn-container {
   grid-area: navbar;
   display: grid;
   grid-template-columns: 15% 25% 20% 20% 20%;
   grid-template-areas: ". in pr ab co";
-  justify-items: right;
+  justify-items: center;
+  font-size: 20px;
+  padding: 20px;
 }
 
 #i-btn {
   grid-area: in;
+  text-decoration: none;
+  position: relative;
+  color: black;
 }
 #p-btn {
   grid-area: pr;
+  text-decoration: none;
+  position: relative;
+  color: black;
 }
 #a-btn {
   grid-area: ab;
+  text-decoration: none;
+  position: relative;
+  color: black;
 }
 #c-btn {
   grid-area: co;
+  text-decoration: none;
+  position: relative;
+  color: black;
 }
 
-li {
-  text-decoration-style: none;
+.btn::after {
+  content: "";
+  position: absolute;
+  background: black;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.btn:hover::after {
+  opacity: 1;
+  transition: ease-in-out;
 }
 
 .page {
   min-height: 100vh;
+  background-color: #e5d3b3;
 }
 
 nav img {
