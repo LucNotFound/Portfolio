@@ -64,6 +64,11 @@
   padding: 60px 0px 0px 85px;
 }
 
+#project-page-container #project3 img{
+  width: 300px;
+  padding: 100px 0px 0px 90px;
+}
+
 .proj-btn {
   font-size: 20px;
   border-radius: 30px;
@@ -80,3 +85,4 @@
 .proj-btn:active {
   background-color: #b99976;
 }
+

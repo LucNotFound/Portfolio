@@ -1,26 +1,12 @@
 #about_me {
   grid-area: aboutpage;
+  display: grid;
+  grid-template-rows: 120px 1fr;
 }
 
-#about_me-page-container {
+#about_me #content-container{
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 764px;
-  height: 1503.2;
-  grid-template-areas: "aword apic";
-}
-
-#about_me-page-container #txt {
-  grid-area: aword;
-  display: grid;
-
-  grid-template-columns: 100%;
-  grid-template-rows: 20% auto;
-}
-
-#about_me-page-container #img {
-  grid-area: apic;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 80% auto;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  gap: 10px;
 }
