@@ -1,3 +1,6 @@
+/* ------------------------------------------ Overall Style ------------------------------------------ */
+
+
 @font-face {
   font-family: proxima-sans-serif;
   src: url("../fonts/Proxima\ Nova\ Font.otf");
@@ -13,6 +16,7 @@ html {
 
 body {
   font-family: proxima-sans-serif;
+  background-color: #e5d3b3;
   margin: 0;
   display: grid;
   grid-template-columns: 100%;
@@ -93,7 +97,6 @@ nav {
 
 .page {
   min-height: 100vh;
-  background-color: #e5d3b3;
 }
 
 .page-titles{
@@ -105,3 +108,319 @@ nav {
 nav img {
   width: 80px;
 }
+
+
+
+/* ------------------------------------------ End of Overall Style ------------------------------------------ */
+
+
+
+/* ------------------------------------------ Start of Intro Style ------------------------------------------ */
+
+
+#intro {
+  grid-area: intropage;
+  border-color: #b99976;
+  border-top: solid 2px;
+  border-left: solid 2px;
+  border-right: solid 2px;
+}
+
+#intro-page-container {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: 764px;
+  height: 1503.2;
+  grid-template-areas: "iword ipic";
+}
+
+#intro-page-container #txt {
+  grid-area: iword;
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: 20% auto;
+}
+
+#intro-page-container #txt #content {
+  padding: 0 0 0 80px;
+}
+
+#intro-page-container #title {
+  text-transform: uppercase;
+  padding: 50px 0px 0px 80px;
+  font-size: 30px;
+}
+
+#intro-page-container h1 {
+  padding: 0 0 0 30px;
+  font-size: 50px;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  width: fit-content;
+  border-color: beige;
+}
+
+#intro-page-container h3 {
+  font-size: 30px;
+}
+
+#intro-page-container #img {
+  grid-area: ipic;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80% auto;
+}
+
+#intro-page-container #img #content img {
+  padding: 30px;
+  width: 690px;
+}
+
+#intro-page-container #img {
+  width: 750px;
+
+  background-color: #e5d3b3;
+}
+
+#intro-page-container #img #content {
+  margin: 15px 0 0 0;
+  background-color: rgb(255, 255, 255);
+}
+
+#intro-page-container #name {
+  padding: 40px 0 0 80px;
+  font-size: 60px;
+}
+
+
+
+/* ------------------------------------------ End of Intro Style ------------------------------------------ */
+
+
+/* ------------------------------------------ Start of Project Style ------------------------------------------ */
+
+
+
+#projects {
+  grid-area: projpage;
+  border-left: solid 2px;
+  border-right: solid 2px;
+}
+
+#project-page-container {
+  display: grid;
+  grid-template-columns: 1503.2px;
+  grid-template-rows: 20% auto;
+  grid-template-areas:
+    "ptitle"
+    "pcontent";
+}
+
+#project-page-container #title {
+  grid-area: ptitle;
+  height: 88px;
+  text-transform: uppercase;
+  padding: 65px 0px 0px 80px;
+  font-size: 30px;
+  background-color: #b99976;
+}
+
+#project-page-container #content {
+  grid-area: pcontent;
+  height: 611.2px;
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+}
+
+#project-page-container #content #top-projs {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  font-size: 30px;
+  justify-items: center;
+}
+
+#project-page-container #content #project-area {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 100%;
+}
+
+#project-page-container #content #project-area .cards {
+  margin: 20px;
+  border-radius: 20px;
+}
+
+#project-page-container .cards {
+  background-color: rgba(255, 195, 92, 0.678);
+  display: grid;
+  grid-template-rows: 85% 15%;
+}
+
+#project-page-container .cards:hover {
+  box-shadow: 0 0 12px rgb(255, 255, 255);
+  background-color: #d2b48c;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#project-page-container #project1 img {
+  width: 300px;
+  padding: 60px 0px 0px 85px;
+}
+
+#project-page-container #project3 img{
+  width: 300px;
+  padding: 100px 0px 0px 90px;
+}
+
+.proj-btn {
+  font-size: 20px;
+  border-radius: 30px;
+  height: 50px;
+  width: 150px;
+  margin: 10px 0 0 160px;
+  border: none;
+}
+
+.proj-btn:hover {
+  box-shadow: 0 0 12px #d2b48c;
+}
+
+.proj-btn:active {
+  background-color: #b99976;
+}
+
+/* ------------------------------------------ End of Project Style ------------------------------------------ */
+
+
+/* ------------------------------------------ Start of About Me Style ------------------------------------------ */
+
+
+#about_me {
+  grid-area: aboutpage;
+  display: grid;
+  grid-template-rows: 120px 1fr;
+  border-color: #b99976;
+  border-left: solid 2px;
+  border-right: solid 2px;
+}
+
+#about_me #content-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 1100px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+#about_me #cards{
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: aliceblue;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0, 5);
+  transition: .3s ease-in-out;
+}
+
+#about_me #cards:hover{
+  height: 420px;
+
+}
+
+#about_me #cards img{
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+
+/* ------------------------------------------ End of About Me Style ------------------------------------------ */
+
+
+/* ------------------------------------------ Start of Contact Style ------------------------------------------ */
+
+
+#contacts {
+  grid-area: contactpage;
+  border-left: solid 2px;
+  border-right: solid 2px;
+  border-bottom: solid 2px; 
+}
+
+#contact-page-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% auto;
+  grid-template-areas:
+    "atitle"
+    "aconts";
+}
+
+#contact-page-container #title {
+  grid-area: atitle;
+  height: 152.8px;
+}
+
+#contact-page-container #contact-info {
+  grid-area: aconts;
+  height: 611.2px;
+
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 100%;
+
+  grid-template-areas: "cmessage icons";
+}
+
+#contact-page-container #message{
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1.2fr 1fr;
+}
+
+#contact-page-container #message #messbox {
+  padding: 80px 80px 0px 80px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+#message{
+  resize: none;
+}
+
+#submit-btn{
+  padding: 0px 0px 0px 165px;
+}
+
+
+/* ------------------------------------------ Start of Intro Style ------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
