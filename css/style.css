@@ -101,11 +101,14 @@ nav {
 
 .page-titles{
   text-transform: uppercase;
-  padding: 50px 0px 0px 80px;
   font-size: 30px;
+  padding: 65px 0px 0px 80px;
+  font-size: 30px;
+  height: 88px;
+  background-color: #b99976;
 }
 
-nav img {
+#logo img {
   width: 80px;
 }
 
@@ -150,6 +153,7 @@ nav img {
   text-transform: uppercase;
   padding: 50px 0px 0px 80px;
   font-size: 30px;
+
 }
 
 #intro-page-container h1 {
@@ -192,6 +196,7 @@ nav img {
 #intro-page-container #name {
   padding: 40px 0 0 80px;
   font-size: 60px;
+  padding-bottom: 5px;
 }
 
 
@@ -393,16 +398,27 @@ nav img {
   grid-template-rows: 50% 50%;
 }
 
+#contact-page-container #messbox #mess-area{
+  padding: 50px 0 0 0;
+}
+
 #message{
   resize: none;
 }
 
 #submit-btn{
-  padding: 0px 0px 0px 165px;
+  padding: 0px 0px 0px 143px;
+}
+
+#submit{
+  border: none;
+  height: 50px;
+  width: 100px;
+  border-radius: 50px;
 }
 
 
-/* ------------------------------------------ Start of Intro Style ------------------------------------------ */
+/* ------------------------------------------ End of Contact Style ------------------------------------------ */
 
 
 
