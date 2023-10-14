@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="page" id="blank"></div>
     <nav>
       <div>
         <a href="#top" id="logo"><img src="assets/logo2.png" alt="logo" /></a>
@@ -20,52 +19,80 @@
       </div>
     </nav>
 
-    <section class="page" id="intro">
-      <div id="intro-page-container">
-        <div id="txt">
-          <div class="page-titles" id="title">Introduction</div>
-          <div id="content">
-            <h1>Aspiring Security Engineer</h1>
-            <h3>
-              I'm currently studying at Lyceum Northwestern University as an IT
-              and I am actually aiming to be a security engineer in the future.
-            </h3>
-          </div>
+    <footer>
+      <div id="footer-container">
+        <div id="ftxt-container">
+          <p>&copy; 2023 My Portfolio. All rights reserved.</p>
         </div>
-        <div id="img">
-          <div id="content">
-            <img src="assets/IMG_20231007_205016.jpg" alt="" />
-          </div>
-          <div id="name"><h1>John Hyacinth V. David</h1></div>
+        <div id="icon-container">
+          <a class="icn" href="https://github.com/LucNotFound" target="_blank"
+            ><img src="assets/github.png" alt="github-icon"
+          /></a>
+          <a
+            class="icn"
+            href="https://www.facebook.com/profile.php?id=100017533087978"
+            target="_blank"
+            ><img src="assets/facebook.png" alt="fb-icon"
+          /></a>
+          <a class="icn" href="https://twitter.com/JoHyDa7253" target="_blank"
+            ><img src="assets/twitter.png" alt="twitter-icon"
+          /></a>
+          <a
+            class="icn"
+            href="https://www.tiktok.com/@jodanotfound3?_t=8gUfglyVu53&_r=1"
+            target="_blank"
+            ><img src="assets/tiktok.png" alt="tiktok-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <section class="page" id="intro">
+      <div id="intro-container">
+        <div id="content">
+          <h3 id="nem">John Hyacinth V. David</h3>
+          <h1 id="q1">You may delay,</h1>
+          <h1 id="q2">But Time Will Not.</h1>
+          <p id="info">
+            Currently studying as an IT Student at Lyceum Northwestern
+            University
+          </p>
         </div>
       </div>
     </section>
 
     <section class="page" id="projects">
       <div id="project-page-container">
-        <div class="page-titles" id="title">Projects</div>
         <div id="content">
           <div id="top-projs">
             <h2>3 Most Recent Projects</h2>
           </div>
           <div id="project-area">
             <div id="project2" class="cards">
-              <img src="" alt="" />
-              <button class="proj-btn" id="project2-btn">Visit</button>
+              <img src="assets/project 2.png" alt="Portfolio Website" />
+              <a href="https://github.com/LucNotFound/Portfolio" target="_blank"
+                ><button class="proj-btn" id="project2-btn">
+                  Portfolio Website Source
+                </button></a
+              >
             </div>
+
             <div id="project1" class="cards">
               <img src="assets/prj.jpg" alt="1st-project" />
               <a
                 href="https://github.com/LucNotFound/IPT-JavaGUI"
                 target="_blank"
               >
-                <button class="proj-btn" id="project1-btn">Visit</button></a
+                <button class="proj-btn" id="project1-btn">
+                  Login Form Source
+                </button></a
               >
             </div>
+
             <div id="project3" class="cards">
               <img src="assets/logo2.png" alt="logo.png" />
-              <a href="assets/logo2.png"
-                ><button class="proj-btn" id="project3-btn">Visit</button></a
+              <a href="assets/logo2.png" target="_blank"
+                ><button class="proj-btn" id="project3-btn">Logo</button></a
               >
             </div>
           </div>
@@ -74,19 +101,11 @@
     </section>
 
     <section class="page" id="about_me">
-      <div class="page-titles">About me</div>
-      <div id="content-container">
-        <div class="cards" id="card1">
-          <img src="assets/hobbyimg.jpg" alt="" />
-        </div>
-        <div class="cards" id="card2"><img src="" alt="" /></div>
-        <div class="cards" id="card3"><img src="" alt="" /></div>
-      </div>
+      <div id="content-container"></div>
     </section>
 
     <section class="page" id="contacts">
       <div id="contact-page-container">
-        <div class="page-titles" id="title">Contacts</div>
         <div id="contact-info">
           <div id="message">
             <div id="sender-info">
@@ -112,10 +131,5 @@
         </div>
       </div>
     </section>
-
-    <footer>
-      <div id="icons-area"></div>
-      <div id="copyright"></div>
-    </footer>
   </body>
 </html>
