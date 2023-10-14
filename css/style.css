@@ -7,8 +7,6 @@
 
 html {
   scroll-behavior: smooth;
-  padding: 0;
-  margin: 0;
   text-decoration: none;
   list-style: none;
   color: white;
@@ -32,48 +30,17 @@ body {
     "intropage"
     "projpage"
     "aboutpage"
-    "contactpage"
+    "contactpage";
 }
 
 nav {
   display: grid;
-  width: 1503.2px;
-  grid-template-columns: 50% auto;
+  width: 100vw;
+  grid-template-columns: 48vw 48vw;
   grid-template-rows: 100%;
   grid-template-areas: "log navbar";
   position: fixed;
 }
-
-footer {
-  margin: 0 0 0 0;
-  background: rgba(31, 193, 223, 1);
-
-}
-
-#footer-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 100%;
-  grid-template-areas: "ftxt ficon";
-}
-
-#ftxt-container {
-  grid-area: ftxt;
-  padding: 0 0 0 50px;
-}
-
-#icon-container {
-  grid-area: ficon;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 0px;
-}
-.icn img {
-  width: 30px;
-  margin: 0 80px 0 80px;
-
-}
-
 
 #btn-container {
   grid-area: navbar;
@@ -155,8 +122,8 @@ footer {
 }
 
 #intro #nem {
-  font-size: 20px;
-  padding: 20px 0 0 0;
+  font-size: 2vw;
+  padding: 1vw 0 0 0;
   margin: 0;
 }
 
@@ -167,7 +134,7 @@ footer {
 }
 
 #intro #content h1 {
-  font-size: 100px;
+  font-size: 7vw;
 }
 
 #intro #q1 {
@@ -184,6 +151,7 @@ footer {
 }
 #intro #info {
   margin: 0%;
+  font-size: 1vw;
 }
 
 /* ------------------------------------------ End of Intro Style ------------------------------------------ */
@@ -192,14 +160,12 @@ footer {
 
 #projects {
   grid-area: projpage;
-
 }
 
 #project-page-container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-areas:  
-  "pcontent";
+  grid-template-areas: "pcontent";
 }
 
 #project-page-container #content {
@@ -283,7 +249,7 @@ footer {
   border: none;
 }
 
-#project3-btn{
+#project3-btn {
   position: relative;
   font-size: 20px;
   border-radius: 30px;
@@ -293,10 +259,9 @@ footer {
   border: none;
 }
 
-.proj-btn{
+.proj-btn {
   background-color: #00005c;
   color: #00005c;
-
 }
 
 .proj-btn:hover {
@@ -305,7 +270,6 @@ footer {
 }
 
 .proj-btn:active {
-
   background-color: #1fc1df;
 }
 
@@ -315,15 +279,89 @@ footer {
 
 #about_me {
   grid-area: aboutpage;
-  display: grid;
-  grid-template-rows: 120px 1fr;
-  border-color: #b99976;
-
 }
 
+#about_me #content-container {
+  display: grid;
+  grid-template-columns: 48vw 48vw;
+  grid-template-rows: 100%;
+  grid-template-areas: "txts me";
+}
 
+#about_me #txt-content {
+  grid-area: txts;
+  display: grid;
+  height: 100%;
+  grid-template-rows: 15% 85%;
+  grid-template-areas:
+    "resume"
+    "iam";
+}
 
+#resume-area {
+  grid-area: resume;
+  display: flex;
+  padding: 2vw 0 0 7vw;
+}
 
+#resume-area h2 {
+  font-size: 1.5vw;
+}
+
+#rb-area {
+  padding: 1vh 0 0 0;
+}
+
+#resume-btn {
+  position: relative;
+  font-size: 1vw;
+  border-radius: 3vw;
+  height: 3vw;
+  width: 12vw;
+  border: none;
+  padding: 0 0 0 0;
+  background-color: #00005c;
+  color: #00005c;
+}
+
+#resume-btn:hover {
+  box-shadow: 0 0 12px #000000;
+  color: #fffafa;
+}
+
+#info-area {
+  grid-area: iam;
+  font-size: 2vw;
+  font-weight: 1vw;
+  padding: 0 0 0 5vw;
+}
+
+#about_me #img-content {
+  grid-area: me;
+  display: grid;
+  padding: 4vh 5vw 0 0;
+  grid-template-rows: 65vh;
+  grid-template-areas:
+    "picko"
+    "name";
+}
+
+#about_me #picture {
+  grid-area: picko;
+  height: 100%;
+  padding: 2vw 0 0 2vw;
+  background-color: #bebf79;
+}
+
+#img-content #nem {
+  grid-area: name;
+  font-size: 2vw;
+  padding: 0 0 0 6.5vw;
+}
+
+#about_me #picture img {
+  width: 39vw;
+}
 
 /* ------------------------------------------ End of About Me Style ------------------------------------------ */
 
@@ -332,6 +370,7 @@ footer {
 #contacts {
   grid-area: contactpage;
 
+  width: 100%;
   background: rgb(0, 0, 92);
   background: linear-gradient(
     180deg,
@@ -341,65 +380,52 @@ footer {
 }
 
 #contact-page-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 20% auto;
-  grid-template-areas:
-    "atitle"
-    "aconts";
-}
-
-#contact-page-container #title {
-  grid-area: atitle;
-  width: 678px;
-  text-transform: uppercase;
-  padding: 65px 0px 0px 500px;
-  margin: 0 0 0 49.4vw;
-  font-size: 30px;
-  background-color: #b99976;
-}
-
-#contact-page-container #contact-info {
-  grid-area: aconts;
-  height: 611.2px;
-
-  display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-rows: 100%;
-
-  grid-template-areas: "cmessage icons";
-}
-
-#contact-page-container #message {
-  display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: 1.2fr 1fr;
-}
-
-#contact-page-container #message #messbox {
-  padding: 80px 80px 0px 80px;
-  display: grid;
-  grid-template-rows: 50% 50%;
-}
-
-#contact-page-container #messbox #mess-area {
-  padding: 50px 0 0 0;
+  padding: 15vw 0 0 20vw;
 }
 
 #message {
-  resize: none;
+  display: grid;
+  grid-template-rows: 15vh 20vh 1vh;
 }
 
-#submit-btn {
-  padding: 0px 0px 0px 143px;
+#sender-info{
+  display: grid;
+  grid-template-rows: 5vh 5vh 5vh;
 }
 
-#submit {
-  border: none;
-  height: 50px;
-  width: 100px;
-  border-radius: 50px;
+#sender-info input[type="text"]{
+  width: 55vw;
 }
+
+
 
 /* ------------------------------------------ End of Contact Style ------------------------------------------ */
 
+
+footer {
+  margin: 0 0 0 0;
+  background: rgba(31, 193, 223, 1);
+}
+
+#footer-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 3vh;
+  grid-template-areas: "ftxt ficon";
+}
+
+#ftxt-container {
+  grid-area: ftxt;
+  padding: 0 0 0 50px;
+}
+
+#icon-container {
+  grid-area: ficon;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0px;
+}
+.icn img {
+  width: 30px;
+  margin: 0 80px 0 80px;
+}
