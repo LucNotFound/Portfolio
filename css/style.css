@@ -36,7 +36,7 @@ body {
 nav {
   display: grid;
   width: 100vw;
-  grid-template-columns: 48vw 48vw;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 100%;
   grid-template-areas: "log navbar";
   position: fixed;
@@ -45,11 +45,11 @@ nav {
 #btn-container {
   grid-area: navbar;
   display: grid;
-  grid-template-columns: 15% 25% 20% 20% 20%;
+  grid-template-columns: 15% 1fr 1fr 1fr 1fr;
   grid-template-areas: ". in pr ab co";
   justify-items: center;
-  font-size: 20px;
-  padding: 20px;
+  font-size: calc(1.5vw);
+  padding: 1.5vw;
 }
 
 #i-btn {
@@ -84,9 +84,9 @@ nav {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 2px;
+  height: 0.1vw;
   opacity: 0;
-  transition: 0.4s ease;
+  transition: 0.4s ease-out;
 }
 
 .btn:hover::after {
@@ -99,7 +99,25 @@ nav {
 }
 
 #logo img {
-  width: 80px;
+  width: 5vw;
+}
+
+@media only screen and (max-width: 48em){
+  nav{
+    grid-template-columns: 1fr 4fr;
+  }
+  
+  #btn-container{
+    font-size: 4vw;
+    
+  }
+
+  #logo img{
+    width: 9vw;
+    padding: 1vh 0 0 2vw;
+  }
+
+
 }
 
 /* ------------------------------------------ End of Overall Style ------------------------------------------ */
@@ -154,6 +172,40 @@ nav {
   font-size: 1vw;
 }
 
+@media only screen and (max-width: 400px){
+  #intro {
+    padding: 0 0vw 0 20vw;
+    background: rgb(31, 193, 223);
+    background: linear-gradient(
+      180deg,
+      rgba(31, 193, 223, 1) 0%,
+      rgba(0, 0, 92, 1) 39%
+    );
+  }
+  #intro-container{
+    writing-mode: vertical-rl;
+  }
+
+  #intro #content h1{
+    text-orientation: mixed;
+    font-size: 20vw;;
+  }
+  
+  #intro #content{
+    margin: 5vw 0 0 0;
+  }
+
+  #intro #nem {
+    font-size: 6vw;
+    padding: 1vw 0 0 0;
+    margin: 0;
+  }
+
+  #intro #info {
+    font-size: 3vw;
+  }
+}
+
 /* ------------------------------------------ End of Intro Style ------------------------------------------ */
 
 /* ------------------------------------------ Start of Project Style ------------------------------------------ */
@@ -177,32 +229,27 @@ nav {
   grid-template-rows: 20% 80%;
 }
 
-#project-page-container #content #top-projs {
+#project-page-container #top-projs {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 100%;
-  font-size: 30px;
+  font-size: 2vw;
   justify-items: center;
   color: #00005c;
   text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
     1px 1px 0 #fffafa;
-  text-decoration-line: underline;
-  text-decoration: wavy;
-  text-decoration-color: white;
 }
 
-#project-page-container #content #project-area {
+#project-page-container #project-area {
   display: grid;
   grid-template-columns: 33% 34% 33%;
   grid-template-rows: 100%;
 }
 
-#project-page-container #content #project-area .cards {
-  margin: 20px;
+#project-area .cards {
+  margin: 1.5vw;
+  height: 60vh;
   border-radius: 20px;
-}
-
-#project-page-container .cards {
   background-color: #1fc1df;
   display: grid;
   grid-template-rows: 85% 15%;
@@ -214,48 +261,48 @@ nav {
   transition: background-color 0.2s ease-in-out;
 }
 
-#project-page-container #project1 img {
-  width: 300px;
-  padding: 60px 0px 0px 85px;
+#project1 img {
+  width: 19vw;
+  padding: 3vw 0px 0px 5.7vw;
 }
 
-#project-page-container #project2 img {
-  width: 300px;
-  padding: 50px 0px 0px 80px;
+#project2 img {
+  width: 19vw;
+  padding: 3vw 0px 0px 5.2vw;
 }
 
-#project-page-container #project3 img {
-  width: 300px;
-  padding: 100px 0px 0px 90px;
+#project3 img {
+  width: 19vw;
+  padding: 4.5vw 0px 0px 5vw;
 }
 
 #project1-btn {
   position: relative;
-  font-size: 20px;
+  font-size: 1.3vw;
   border-radius: 30px;
-  height: 50px;
-  width: 250px;
-  margin: 10px 0 0 110px;
+  height: 6.7vh;
+  width: 15vw;
+  margin: 0.1vw 0 0 7.3vw;
   border: none;
 }
 
 #project2-btn {
   position: relative;
-  font-size: 20px;
+  font-size: 1.3vw;
   border-radius: 30px;
-  height: 50px;
-  width: 250px;
-  margin: 10px 0 0 100px;
+  height: 6.7vh;
+  width: 15vw;
+  margin: 0.1vw 0 0 7.3vw;
   border: none;
 }
 
 #project3-btn {
   position: relative;
-  font-size: 20px;
+  font-size: 1.3vw;
   border-radius: 30px;
-  height: 50px;
-  width: 160px;
-  margin: 10px 0 0 155px;
+  height: 6.7vh;
+  width: 10vw;
+  margin: 0.1vw 0 0 9.6vw;
   border: none;
 }
 
@@ -380,28 +427,57 @@ nav {
 }
 
 #contact-page-container {
-  padding: 15vw 0 0 20vw;
+  padding: 15vw 0 0 35vw;
 }
 
 #message {
   display: grid;
   grid-template-rows: 15vh 20vh 1vh;
+  gap: 5vh;
 }
 
-#sender-info{
+#sender-info {
   display: grid;
   grid-template-rows: 5vh 5vh 5vh;
+  gap: 2vh;
 }
 
-#sender-info input[type="text"]{
-  width: 55vw;
+#sender-info input[type="text"] {
+  width: 30vw;
+  border-radius: 50px;
+  height: 4vh;
 }
 
+#mess-area #message {
+  border-radius: 15px;
+  width: 30vw;
+}
 
+#submit-btn {
+  padding: 1vw 0 0 9vw;
+}
+
+#submit {
+  position: relative;
+  font-size: 1vw;
+  border-radius: 3vw;
+  height: 3vw;
+  width: 12vw;
+  border: none;
+  padding: 0 0 0 0;
+  background-color: #00005c;
+  color: #ffffff;
+}
+
+#submit:hover {
+  box-shadow: 0 0 12px #000000;
+  background-color: #1fc1df;
+  color: #ffffff;
+}
 
 /* ------------------------------------------ End of Contact Style ------------------------------------------ */
 
-
+/* ------------------------------------------ Start of Footer Style ------------------------------------------ */
 footer {
   margin: 0 0 0 0;
   background: rgba(31, 193, 223, 1);
@@ -416,7 +492,8 @@ footer {
 
 #ftxt-container {
   grid-area: ftxt;
-  padding: 0 0 0 50px;
+  font-size: 1.2vw;
+  padding: 0 0 0 3vw;
 }
 
 #icon-container {
@@ -426,6 +503,6 @@ footer {
   gap: 0px;
 }
 .icn img {
-  width: 30px;
-  margin: 0 80px 0 80px;
+  width: 2vw;
+  margin: 0 5vw 0 5vw;
 }
